@@ -1,4 +1,5 @@
 // app/api/login/route.js
+export const runtime = "nodejs";
 import { NextResponse } from "next/server";
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
