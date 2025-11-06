@@ -1,0 +1,67 @@
+.Benefits{ 
+    padding: 50px 5% 30px 5%;
+    background: radial-gradient(circle, #d2e6f8 0%, #ffffff 100%) !important;
+}
+.benfitsContainer{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.benfitBox{
+    position: relative;
+    width: 23%;
+}
+.benfitBox h3{
+    position: absolute;
+    border: 2px solid greenyellow;
+    border-top: none;
+    border-left: none;
+    left: -30px;
+    top: 10px;
+    transition: .3s;
+    padding: 5px 15px;
+    cursor: pointer;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+.benfitBox h3:hover{
+    background-color: black;
+    color: white;
+    border: none;
+    outline: none;
+    
+}
+.Benefits h2{
+    width: 30%;
+    margin: auto;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+.benfitDetails{
+    background-color: white;
+    width: 100%;
+    height:200px;
+    padding: 20px;
+    padding-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+@media (max-width: 500px){
+    .Benefits h2{
+        width: 100%;
+    }
+    .benfitsContainer{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .benfitBox{
+        width: 100%;
+    }
+    .benfitDetails{
+        padding-top: 40px;
+    }
+}

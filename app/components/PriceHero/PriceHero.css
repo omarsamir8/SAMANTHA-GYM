@@ -1,0 +1,75 @@
+.PriceHero{
+    padding:5%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: radial-gradient(circle, #d2e6f8 0%, #ffffff 100%) !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.PriceTitle{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 45%;
+}
+.PriceTitle p{
+    font-weight: bold;
+    width: 90%;
+    color: gray;
+}
+.h-1{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.h-1 h5 ,.h-1 p{
+    padding: 0;
+    margin: 0;
+}
+.h-1 h5{
+    font-size: 22px;
+    font-weight: bold;
+}
+.h-1 p{
+    color: gray;
+}
+.PriceTitle h2{
+    font-size: 40px;
+    font-weight: bold;
+}
+.h-right{
+    background-color: greenyellow;
+    width: 50%;
+    height: 280px;
+    position: relative;
+}
+.img1{
+    width: 180px;
+    height: 180px;
+    text-align: center;
+    background-color: white;
+    position: absolute;
+    left: 0px;
+    top: 0;
+}
+.img2{
+    position: absolute;
+    bottom: -20%;
+    left: 40%;
+    width: 180px;
+}
+@media (max-width: 500px){
+    .PriceTitle{
+        width: 100%;
+    }
+    .PriceHero{
+        gap: 20px;
+    }
+    .PriceTitle{
+        width: 100%;
+    }
+    .h-right{
+        width: 100%;
+    }
+}

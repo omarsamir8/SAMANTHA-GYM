@@ -1,0 +1,63 @@
+.VideosContainer{
+    padding: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: radial-gradient(circle, #d2e6f8 0%, #ffffff 100%) !important;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.video{
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: radial-gradient(circle, #baddfc 0%, #ffffff 100%) !important;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    
+}
+.video video{
+    height: 200px;
+}
+.video h2{
+    font-size: 40px;
+    font-weight: bold;
+}
+.video p{
+    font-size: 17px;
+}
+
+.please{
+    text-align: center;
+    background: radial-gradient(circle, #baddfc 0%, #ffffff 100%) !important;
+    padding: 30px 5%;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.please h2{
+    font-size: 40px;
+    font-weight: bold;
+}
+.please button{
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: greenyellow;
+    width: 200px;
+    transition: .3s;
+}
+.please button:hover{
+    background-color: black;
+}
+@media (max-width: 500px){
+    .video{
+        width: 100%;
+    }
+    .please button{
+        width: 100%;
+    }
+}

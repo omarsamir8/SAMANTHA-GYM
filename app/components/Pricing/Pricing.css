@@ -1,0 +1,108 @@
+.pricingContainer{
+    background: radial-gradient(circle, #d2e6f8 0%, #ffffff 100%) !important;
+    padding: 30px 5%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.price{
+    padding: 20px;
+    background: radial-gradient(circle, #baddfc 0%, #ffffff 100%) !important;
+    width: 30%;
+    border: 2px solid white;
+    box-shadow: 0 4px 20px rgba(186, 221, 252, 0.8),
+              0 0 10px rgba(186, 221, 252, 0.5),
+              0 0 30px rgba(255, 255, 255, 0.3);
+    border-radius: 12px;   
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.priceHead{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.priceHead img{
+    width: 40px;
+}
+.priceHead h2{
+    padding: 0;
+    margin: 0;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.amount{
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+}
+.amount h2{
+    padding: 0;
+    margin: 0;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+}
+.amount h5{
+padding-top: 20px;
+color: gray;
+}
+.price p{
+    font-size: 14px;
+}
+.price ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+}
+.price ul li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+}
+.price ul li h5{
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+}
+.square2{
+    width: 10px !important;
+    height: 10px !important;
+    background-color: greenyellow;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.price button{
+    padding: 15px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    color: white;
+    background-color: greenyellow;
+    transition: .3s;
+}
+.price button:hover{
+    background-color:black;
+}
+@media (max-width: 500px){
+    .price{
+        width: 100%;
+    }
+    .pricingContainer{
+        gap: 20px;
+    }
+}

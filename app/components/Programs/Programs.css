@@ -1,0 +1,79 @@
+.Programs{
+    padding: 20px 5%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: radial-gradient(circle, #c8e2f8 0%, #ffffff 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.Programscontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    width: 25%;
+}
+.programsTitle{
+    width: 100%;
+}
+.programsTitle h2{
+    font-weight: bold; 
+}
+.programsTitle button{
+       padding: 15px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    color: white;
+    width: 150px;
+    background-color: greenyellow;
+    transition: .3s;
+}
+.programsTitle button:hover{
+    background-color:black;
+}
+.programShape{
+    width: 100%;
+    border: 1px solid rgb(209, 209, 209);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+.programShape img{
+    border: 1px solid greenyellow;
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+}
+.programShape h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+@media (max-width: 500px){
+    .Programs{
+        flex-wrap: wrap;
+    }
+    .Programscontainer{
+        width: 100%;
+    }
+    .Programs .img{
+        position: relative;
+        width: 80%;
+    }
+    .Programs .img{
+        position: absolute;
+        left: 5%;
+        top: 20px;
+        z-index: 20;        
+    }
+    .Programs .img img{
+        width: 100%;
+        height: 200vh;
+        opacity: .5;
+    }
+    
+   
+}

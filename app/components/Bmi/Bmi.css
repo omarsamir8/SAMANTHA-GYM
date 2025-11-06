@@ -1,0 +1,70 @@
+.bmi{
+    padding: 10% 5% 20px 5%;
+    display: flex;
+    background: radial-gradient(circle, #d2e6f8 0%, #ffffff 100%) !important;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+}
+.bmiImg{
+    background-color: greenyellow;
+    height: 75vh;
+    width: 50%;
+    position: relative;
+}
+.bmiImg img{
+    height: 100vh;
+    position: absolute;
+    top: -25%;
+}
+.bmiForm{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.bmiForm h2{
+    font-weight: bold;
+    font-size: 40px;
+}
+.bmiForm p{
+    color: gray;
+}
+.bmiForm form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.bmiForm form button{
+     padding: 15px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    color: white;
+    width: 250px;
+    background-color: black;
+    transition: .3s;
+}
+.bmiForm form button:hover{
+    background-color: yellowgreen;
+}
+@media (max-width: 500px){
+    .bmiImg{
+        position: absolute;
+        background: radial-gradient(circle, #d2e6f8 0%, #ffffff 100%) !important;
+    }
+    .bmiImg img{
+        height: 85vh;
+        top: 0;
+        opacity: .5;
+    }
+    .bmiForm{
+        width: 100%;
+        z-index: 100;
+    }
+    .bmivalue{
+        width: 50%;
+    }
+    .bmiForm form button{
+        width: 150px;
+    }
+}

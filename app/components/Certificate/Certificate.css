@@ -1,0 +1,34 @@
+.Certificate{
+    padding: 30px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: radial-gradient(circle, #d1e6f8 0%, #ffffff 100%) !important;
+}
+.Certificate .box{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 1px solid greenyellow;
+    border-radius: 5%;
+    padding: 10px 20px;
+    transition: .3s;
+}
+.Certificate .box:hover{
+    transform: scale(1.05);
+}
+.Certificate .box h2{
+    color: greenyellow;
+    font-weight: bold;
+}
+.Certificate .box h5{
+    font-weight: bold;
+}
+@media (max-width: 500px){
+    .Certificate{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .Certificate .box{
+        width: 100%;
+    }
+}

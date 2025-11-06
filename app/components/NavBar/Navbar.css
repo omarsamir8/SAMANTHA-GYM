@@ -1,0 +1,86 @@
+.bar {
+  width: 30px;
+  height: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bar span {
+  display: block;
+  height: 4px;
+  width: 100%;
+  background-color: black;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+/* حركة عند الضغط */
+.bar.active span:nth-child(1) {
+  transform: rotate(45deg) translateY(9px);
+}
+.bar.active span:nth-child(2) {
+  opacity: 0;
+}
+.bar.active span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-9px);
+}
+
+/* القائمة المنسدلة */
+.menu {
+  animation: fadeDown 0.3s ease;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  /* background: radial-gradient(circle, #c8e2f8 0%, #ffffff 100%); */
+  /* background: radial-gradient(circle, #a2fc9a 0%, #ffffff 100%) !important; */
+  background-image: url('../../../public/Assets/blur.png');
+}
+.menu ul li {
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  margin: auto;
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: capitalize;
+  transition: 0.3s;
+}
+
+.menu ul li:hover {
+  background: greenyellow;
+  transform: scale(1.05);
+  color: white !important;
+  cursor: pointer;
+}
+
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.welcomContainer h2{
+    font-size: 22px;
+    font-weight: bold;
+
+}
+.logoContainer h2 {
+  font-size: 24px;
+  font-weight: bold;
+  display: inline-block;
+  background: linear-gradient(to bottom, transparent 50%, greenyellow 50%);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.logoContainer img{
+    border-radius: 50%;
+}
+.navbar{
+  padding: 10px 5%;
+  /* background: radial-gradient(circle, #a2fc9a 0%, #ffffff 100%) !important; */
+  background-image: url('../../../public/Assets/blur.png');
+}

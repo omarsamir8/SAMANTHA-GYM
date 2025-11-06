@@ -1,0 +1,52 @@
+.Started{
+    padding: 150px 5%;
+    display: flex;
+    justify-content: space-between;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+     background: radial-gradient(circle, #d2e6f8 0%, #ffffff 100%) !important;
+     gap: 20px;
+     position: relative;
+}
+.startDetails{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.startDetails h2{
+    font-weight: bold;
+    font-weight: 10rem !important;
+    width: 190px;
+}
+.startDetails p{
+    color: gray;
+}
+.startDetails button{
+         padding: 15px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    color: white;
+    width: 250px;
+    background-color: yellowgreen;
+    transition: .3s;
+}
+.startDetails button:hover{
+    background-color: black;
+}
+@media (max-width: 500px){
+    .bmiImg{
+        position: absolute;
+        opacity: .5;;
+        width: 100%;
+        height: 100vh;
+        top: 20px !important;
+        left: 20px !important;
+    }
+    .bmiImg img{
+        height: 100vh;
+    }
+    .Started{
+        padding: 20px 5%;
+    }
+}
