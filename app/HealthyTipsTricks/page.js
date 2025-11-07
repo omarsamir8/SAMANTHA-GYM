@@ -1,6 +1,9 @@
 import Blog from "../components/Blog/Blog";
 import HealthyHero from "../components/Healthy/Health";
-
+export const metadata = {
+  title: "Healthy Tips & Tricks",
+  description: "Discover simple and effective healthy tips and tricks to improve your lifestyle. From nutrition advice and workout ideas to daily habits that boost your energy — find everything you need to stay fit, strong, and motivated.",
+};
 function HealthyTipsTricks(){
     return (
         <>

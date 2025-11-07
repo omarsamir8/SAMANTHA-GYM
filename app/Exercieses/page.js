@@ -1,6 +1,9 @@
 import HealthyHero from "../components/Healthy/Health";
 import Videos from "../components/Videos/Videos";
-
+export const metadata = {
+  title: "Exercieses",
+  description: "Explore the amazing benefits of regular exercise through our detailed videos. Learn how each workout improves your strength, flexibility, and overall health. Our exercise videos guide you step by step to help you train safely and effectively while staying motivated.",
+};
 function Excercises(){
     return (
         <>
